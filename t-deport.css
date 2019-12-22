@@ -1,0 +1,141 @@
+
+	body{
+	font:120% arial,verdana,helvatica,sans-serif;/*tamaño fuente para todo el body*/
+	width: 960px; /* tamaño del body a lo ancho*/
+	margin: 0 auto; /* margen exterior del body a lo ancho*/
+	border: thin solid black; /* pone el bode con grosor, solido y de color */
+	/*border-style: solid;
+	border-color: black;*/
+	background: #D7F0F0;/*pone el color de fondo a toda la pantalla, no solo al body*/
+}
+header{
+	background-color: red;
+}
+header div{ /* regla de estilo para dar formato de altura y anchura al contenedor header y div se crea debajo de la imagen*/
+	height: 160px;
+	width: 640px;
+	background: linear-gradient(#f69d3c, #3f87a6);
+	float:right; /*hace que el contenedor header div flote, se ponga a la derecha de la imagen, se saca del contenedor div*/
+	padding-top: 90px; /* pone margenes interiores en el contenedor*/ 
+	border-radius: 0px 11px 11px 0px; /* boder redondeado*/
+	margin-right: 10px;/*pone margen exterior al contenedor*/
+	box-shadow: 7px 7px 12px #692FE5;/* pone sombra al contenedor*/
+}
+header h1{
+color: #E8B11E;
+font-size: 3.5em;
+text-align: center;
+text-shadow: 3px 3px 2px red;
+}
+header img{
+	float:left;
+	/*position: relative; /*posicion con respacto a su posicion normal o estatica*/
+	/*top: 200px;/* distancia desde el borde superior*/
+	/*left:200px;/*distancia desde la parte izquiersa*/
+	/*position: absolute;/*crea un elemento independiente*/
+	/*position: fixed;/*posicionamiento fijo no se mueve aunque la pagina se desplace*/
+	border-radius: 11px 0px 0px 11px;
+	margin-left: 10px ;
+	box-shadow: 7px 7px 12px red;
+	margin: 5px;
+	/*visibility: hidden;/* oculta la imagen pero deja el hueco*/
+	/*display: none;/*elimina el elemento y no reserva el espacio*/
+	
+	}
+	header nav{
+		background-color: black; /* el nav ocupa todo el espacio por debajo ya que los elementos flotan el header div y el img*/
+		clear: both;/* anula la propiedad float de los elementos nav img y header div y se ajusta al tamaño del nav*/
+		text-align: center;
+	}
+	nav li{ /* formato del nav li*/
+	display: inline;
+	line-height: 40px;
+	margin: 20px;
+	
+}
+nav a{
+	text-align: center;
+	text-decoration: none;
+	color: #FFF8DC;
+	font-weight: bold; 
+	}
+	.uno{
+		/*background: orange;*/
+		background: linear-gradient(#93b7be, #334144);
+
+}
+.uno h2{
+font-size: 3em;
+text-align: center;
+color: white;
+font-weight: bold;
+padding: 10px;
+
+}
+.uno img{
+
+margin-left: 300px;
+
+}
+.p1 p{
+	text-shadow: 2px 2px 2px #c0c0c0;
+	color:#2f4f4f;
+	text-align: center;
+	padding: 10px;
+}
+.p2 p{
+
+	color:#93b7be;
+	text-align: center;
+}
+.p3 p{
+
+color:white;
+text-align: center;
+padding: 10px;
+
+}
+section{
+	background: #ECF0F1;
+	/*width: 600px;*/
+	/*float:left;*/
+	/*margin: 10px 10px 10px 10px;*/
+	padding: 10px;
+}
+
+section article{
+	display: table-cell;
+	padding: 10px;
+}
+section article h3{
+
+font-size: 1.3em;
+color:#5D6D7E ;
+font-weight: bold;
+border-top: medium solid #7F8C8D;
+padding: 9px;
+
+}
+section article p{
+	padding: 10px;
+
+color: #5D6D7E ;
+
+}
+section article a{
+
+	font-weight: bold;
+	text-decoration: none;
+}
+footer{
+
+	background: black;
+	color:white;
+	text-align: center;
+}
+footer a{
+
+	text-decoration: none;
+	color:white;
+
+
