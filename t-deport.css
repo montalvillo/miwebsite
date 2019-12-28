@@ -53,12 +53,28 @@ header img{
 	margin: 20px;
 	
 }
+
+
+nav li a:hover{
+
+	text-transform: uppercase;/* pone en mayusculas*/
+	color:red;/* pone el texto en color*/
+}
 nav a{
 	text-align: center;
 	text-decoration: none;
 	color: #FFF8DC;
 	font-weight: bold; 
+
+
 	}
+	/*nav a:visited {
+		color:red;
+	}*/
+
+	/*nav a:active{
+		color:#000080;
+	}*/
 	.uno{
 		/*background: orange;*/
 		background: linear-gradient(#93b7be, #334144);
@@ -75,6 +91,8 @@ padding: 10px;
 .uno img{
 
 margin-left: 300px;
+/*visibility: hidden;*/ /* la imagen no se ve pero queda su hueco */
+/*display: none;*/ /*la imagen no se ve y se ocupa su espacio */
 
 }
 .p1 p{
@@ -97,7 +115,11 @@ padding: 10px;
 }
 section{
 	background: #ECF0F1;
-	/*width: 600px;*/
+	width: 940px;
+	margin: 0 auto;
+	/*height: 100px;*/
+	/*border:thin solid black;*/
+	/*overflow: scroll;*/
 	/*float:left;*/
 	/*margin: 10px 10px 10px 10px;*/
 	padding: 10px;
@@ -137,5 +159,5 @@ footer a{
 
 	text-decoration: none;
 	color:white;
-
+}
 
