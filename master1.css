@@ -1,4 +1,4 @@
- body{
+body{
 
  	font: 90% arial,verdana,helvetica,sans-serif;
  	width: 960px;
@@ -98,7 +98,6 @@ section {
 }
 
 	/*a[href^= "t"]{ 
-
 		background: blue;
 	}*/
 
@@ -158,7 +157,6 @@ section article h3:first-letter{ /* modifica la primera letra*/
 }
 
 /*section:first-line{
-
 	color:blue;
 }*/
 
@@ -196,9 +194,7 @@ padding: 10px 40px 30px 40px;
 }
 
 /*.lateral1 h3:before {
-
 content:url(flecha.png);
-
 }*/
 .lateral2{
 background: #E8DAEF;
@@ -210,7 +206,6 @@ padding: 20px 40px 35px 40px;
 }
 /*
 .lateral2 h3:after{
-
 	content:url(flecha.png);
 }*/
 aside ul{
@@ -244,11 +239,9 @@ aside ul li:nth-child(odd){  /*selecciona todos loe elementos impares de la list
 }
 
 /*aside ul li:nth-child(odd){
-
 	color:green;
 }*/
 /*aside ul li:nth-of-type(odd){
-
 color: green;*/
 
 
@@ -262,4 +255,3 @@ footer{
 	font-size: 1.4em;
 	padding-top: 10px;
 }
-
