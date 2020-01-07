@@ -1,0 +1,265 @@
+ body{
+
+ 	font: 90% arial,verdana,helvetica,sans-serif;
+ 	width: 960px;
+ 	margin: 0 auto;
+ 	border: thin solid red;
+ 	background: green 30%;
+ 	background: linear-gradient(#f69d3c, #3f87a6);
+
+ }
+
+ header{
+ 	background: #FFF0F5;
+
+}
+ header div{
+
+ 	height:160px;
+ 	width: 640px;
+	border: medium solid green;
+	float:right;
+	background: -webkit-linear-gradient(left,#f0f0f0  10%,#ff4500);
+	padding-top: 90px;
+	border-radius: 0px 11px 11px 0px;
+	box-shadow: 7px 7px 12px black;
+	
+}
+header h1{
+	color:#ffd700;
+	font-size: 4em;
+	text-align: center;
+	text-shadow: 3px 3px 2px red;
+}
+header img{
+	border-radius: 11px 0px 0px 11px;
+	margin-left: 10px;
+	box-shadow: 7px 7px 12px #777;
+	float: left;
+	margin-bottom: 10px; 
+	margin: 0px 0px 20px ;
+}
+nav{
+
+	background: black;
+	clear: both;
+
+
+}
+nav li{
+	text-decoration: none;
+	display: inline;
+	margin: 0px 20px 0px 20px;
+line-height: 40px;
+padding: 10px;
+
+}
+
+
+nav a{
+
+text-align: center;
+text-decoration: none;
+color:#777;
+font-weight: bold;
+
+
+}
+nav a:link{
+
+
+	color:orange; /*Pendiente de estar visitad*/
+}
+
+nav a:visited{
+
+	color:#dc143c;/* Se ponen en rojo los enlaces visitados*/
+
+}
+nav li:hover{
+
+background-color: white; /* cambia el fondo a este color*/
+}
+
+nav a:active{
+
+	color:#000080;/* cambia el fondo de texto cuando se pulsa sobre el enlace*/
+}
+section {
+
+	width: 600px;
+	/*background:red;*/
+	float:left;
+	background: -webkit-linear-gradient(#ccccf5  ,#f0f0f0);
+	margin: 10px 0px 10px 10px;
+	padding: 20px;
+	border-radius: 11px 11px 11px 11px;
+	box-shadow: 7px 7px 12px black;
+}
+
+	/*a[href^= "t"]{ 
+
+		background: blue;
+	}*/
+
+
+section h2{
+
+font-size: 2em;
+text-align: center;
+font-weight: bold;
+color: white;
+}
+section p{
+	text-align: justify;
+	color:blue;
+	margin: 8px auto 8px auto;
+}
+section article{
+
+	display: table-cell;
+	width: 150px;
+	background: -webkit-linear-gradient(bottom,#F8F8FF 10%,#696969);
+	padding: 10px;
+	border-radius: 1px ;
+	border: medium solid blue;
+	border-radius: 11px 11px 11px 11px;
+	}
+
+section article:nth-child(odd){
+
+	background: -webkit-linear-gradient(top,#F8F8FF 10%,#696969);
+}
+
+
+	
+section article p{
+	text-align:left;
+	font-size: 0.7em;
+	margin: 5px 10px 5px 10px;
+
+}
+
+section article h3{
+
+	font-size: 1.3em;
+	font-weight: bold;
+	border-bottom: solid medium red;
+}
+
+
+
+section article h3:first-letter{ /* modifica la primera letra*/
+
+	margin-right: 5px; /* separa la primera letra*/
+	font-size: 2em;
+	color:#777; 
+
+}
+
+/*section:first-line{
+
+	color:blue;
+}*/
+
+aside{
+
+	width: 310px;
+	background: #AF7AC5;
+	float: right;
+}
+aside h3:first-letter{
+
+	margin-right: 5px;
+	font-size: 2em;
+	color: #777;
+}
+aside h3{
+	font-size: 1.3em;
+	color: #FDFEFE ;
+	font-weight: bold;
+	border-bottom: medium solid blue;
+
+}
+aside p{
+	line-height:1.4em;
+	margin: 5px  22px 5px 22px;
+}
+
+
+.lateral1{
+background: #E8DAEF;
+box-shadow: 7px 7px 12px black;
+border-radius: 11px 11px 11px 11px;
+margin: 10px;
+padding: 10px 40px 30px 40px;
+}
+
+/*.lateral1 h3:before {
+
+content:url(flecha.png);
+
+}*/
+.lateral2{
+background: #E8DAEF;
+box-shadow: 7px 7px 12px black;
+border-radius: 11px 11px 11px 11px;
+margin: 10px;
+padding: 20px 40px 35px 40px;
+
+}
+/*
+.lateral2 h3:after{
+
+	content:url(flecha.png);
+}*/
+aside ul{
+	margin: 0px 0px 0px 22px;
+	list-style: none;
+}
+aside ul li a{
+	display: block;
+	text-decoration: none;
+	color: #873600; 
+
+}
+
+aside a:hover{
+
+	
+text-decoration: underline;/* suraya los enlaces con el mismo color del text*/
+
+}
+/*aside ul li:last-of-type{  cambia el color de fondo 
+	background-color: #00bfff;
+}*/
+
+/*aside ul li:nth-child(3){  /*cambiar el color del tercer elemento de la lista
+	background-color: #00bfff;
+}*/
+
+
+aside ul li:nth-child(odd){  /*selecciona todos loe elementos impares de la lista*/
+	background-color: #00bfff;
+}
+
+/*aside ul li:nth-child(odd){
+
+	color:green;
+}*/
+/*aside ul li:nth-of-type(odd){
+
+color: green;*/
+
+
+footer{
+	background:black;
+	float: right;
+	color: white;
+	width: 950px;
+	height: 70px;
+	text-align: center;
+	font-size: 1.4em;
+	padding-top: 10px;
+}
+
