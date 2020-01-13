@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>turismo2</title>
@@ -11,7 +11,7 @@
 	
 			<img src="guardia.png" alt"guardia urbano" height="250" width="300"/>
 			
-			<div>
+			<div >
 			
 			<h1>Turismo en España</h1>
 			
@@ -101,57 +101,113 @@
 		</ul>
 	</div>
 	</aside>
+
+
+
+		<h4>Hagamos un comentario</h4>
+	<hr/>
 	
-	<!-- <form action="mailto:montalvillo@outlook.com" method="post"> -->
-		
-		<!-- <form action="" enctype="multipart/form-data" method="post"> -->
-		<form action ="">
-		<h3>Hagamos un comentario</h3>
-		
-		<p><label for= "nombre">Nombre:</label>
-			<input name="nombre" id="nombre" type="text" required/></p>
-			<label for="contraseña">Contraseña:</label>
-			<!--  <input type="password" name="contraseña" id="contraseña"/>  -->
-			<!-- <input type="hidden" name="c" value="@FrayLuisCentroA"/> -->
-			<!-- <input type="reset"/> -->
-			<!-- <input type="range" name="deslizate" min="1" max="5" step="1" value="3"/> -->
-			<p><label for="comentario">Comentemos:/label>
-			<textarea rows="4" cols="30" name="comentario"></textarea></p>
+	<form action="">
+		<p><label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre"size="50" required=""></p>
 			<br>
-			<p><label for ="apellido1">Apellido1:</label>
-			<input type="text" name="apellido1" required/></p>
-			<br>
-			<p><label for="apellido2">Apellido2</label>
-			<input type="text" name="apellido2" required/></p>
-			<br>
-	<p><label for="email">E-mail:</label>
-		<input type="email" name="email" id="email" required></p>
-	</br>
-	<p><label for="web">Pagina Web:</label>
-		<input type="url" name="web" id="web" required></p>
-		<br>
-		<!-- <p><label for="buscar">Buscar</label>
-			<input type="search" name="buscar"></p> -->
-		<!-- <p><input type="submit"></p> -->
-		<p><input type="file"/></p>
-		<br>
-	 <input type="image" src="boton_rojo.png" alt="Enviar" width="60" height="60"> 
+			<p><label for="apellido1">1er Apellido</label>
+				<input type="text" name="apellido1"  ide="apellido1"size="50" required=""> </p>
+				<br>
+				<p><label for="apellido2">2º Apelido</label>
+					<input type="text" name="apellido2" id="apellido2"size="50" required=""></p>
+					<br>
+					<p><label for="email">E-mail</label>
+						<input type="email" id="email" name="" size="50"required></p>
+						<br>
+						<p><label for="web">Pagina Web</label>
+							<input type="url" name="web" id="web" size="50" required=""></p>
+						</fieldset>
 
+						
+		<p><label for="comentario">Comentemos</label>
+					<textarea rows="4" cols="30" name="comentario" placeholder="Añada lo que quiere..."></textarea></p>
 		<br>
-		<p><label for="web">Pagina Web:</label>
-		<input name="web" id="web" type="url" required/></p>
+	
+	</form>		
+	
 
-	</form>
+
 	<footer>
-		
 		
 		<p class="azul">El autor de esta pagina es :<span class="cursivanegrita">Juanito</span></p>
 		<p>Si quiere obtener mas informacion escribanos a:<a href="mailto:montalvillo@outlook.com">montalvillo@outloot.com</a></p>
 		<p>Tambien puede descargar toda la informacion turistica en formato PDF pulsando sobre:<a href="doc1.pdf" title="Descargar archivo">turismo.pdf</a></p>
-		
+
+
 	
 	</footer>
 	
-	
 </body>
 </html>
+
+
+
+
+
+<!--  <h4>Hagamos un comentario</h4>
+	<hr/>
+	<fieldset>
+		<legend>Otros Datos</legend>
+	<form action="">
+		<p><label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre"size="50" required=""></p>
+			<br>
+			<p><label for="apellido1">1er Apellido</label>
+				<input type="text" name="apellido1"  ide="apellido1"size="50" required=""> </p>
+				<br>
+				<p><label for="apellido2">2º Apelido</label>
+					<input type="text" name="apellido2" id="apellido2"size="50" required=""></p>
+					<br>
+					<p><label for="email">E-mail</label>
+						<input type="email" id="email" name="" size="50"required></p>
+						<br>
+						<p><label for="web">Pagina Web</label>
+							<input type="url" name="web" id="web" size="50" required=""></p>
+						</fieldset>
+
+						<fieldset>
+							<legend>Otros Datos</legend>
+
+
+				<p><label for="comentario">Comentemos</label>
+					<textarea rows="4" cols="30" name="comentario" placeholder="Añada lo que quiere..."></textarea></p>
+
+
+
+					<p><label for="sexo">Sexo con botones de opcion</label><br> 
+						<input type="radio" name="sexo" checked />Masculino<br>
+						<input type="radio" name="sexo"/>Femenino<br>
+
+					
+
+
+						
+	<p>
+		Elija la excursion con lista desplegable 
+	
+		<select> 
+			<option>Casino</option>
+			<option>Bodega</option>
+			<option>Espéctaculo</option>
+			<option>Cuevas</option>
+			<option>Fabrica</option>
+			<option>Futbol</option>
+		</select>
+	</p>
+
+
+<p><input type="submit"></p>
+		<br>
+		<input type="reset" name=""/>
+	
+			
+</fieldset>
+
+		</form>		
+	 -->
