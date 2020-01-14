@@ -1,0 +1,100 @@
+body{
+
+ 	font: 90% arial,verdana,helvetica,sans-serif;
+ 	width: 960px;
+ 	margin: 0 auto;
+ 	/* border: thin solid red; */
+ 	background: green 30%;
+ 	background: linear-gradient(#f69d3c, #3f87a6);
+	
+
+ }
+
+ header{
+ 	background: #FFF0F5;
+
+}
+ header div{
+
+ 	height:160px;
+ 	width: 640px;
+	border: medium solid green;
+	float:right;
+	background: -webkit-linear-gradient(left,#f0f0f0  10%,#ff4500);
+	padding-top: 90px;
+	border-radius: 0px 11px 11px 0px;
+	box-shadow: 7px 7px 12px black;
+	
+}
+header h1{
+	color:#ffd700;
+	font-size: 4em;
+	text-align: center;
+	text-shadow: 3px 3px 2px red;
+}
+header img{
+	border-radius: 11px 0px 0px 11px;
+	margin-left: 10px;
+	box-shadow: 7px 7px 12px #777;
+	float: left;
+	margin-bottom: 10px; 
+	margin: 0px 0px 20px ;
+}
+nav{
+
+	background: black;
+	clear: both;
+
+
+}
+nav li{
+	text-decoration: none;
+	display: inline;
+	margin: 0px 20px 0px 20px;
+line-height: 40px;
+padding: 10px;
+
+}
+
+
+nav a{
+
+text-align: center;
+text-decoration: none;
+color:#777;
+font-weight: bold;
+
+
+}
+nav a:link{
+
+
+	color:orange; /*Pendiente de estar visitad*/
+}
+
+nav a:visited{
+
+	color:#dc143c;/* Se ponen en rojo los enlaces visitados*/
+
+}
+nav li:hover{
+
+background-color: white; /* cambia el fondo a este color*/
+}
+
+nav a:active{
+
+	color:#000080;/* cambia el fondo de texto cuando se pulsa sobre el enlace*/
+}
+
+
+
+.izq{
+float:left;
+width:450px;
+
+}
+.dcha{
+float:right;
+width:450px;
+}
