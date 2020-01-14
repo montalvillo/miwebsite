@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	 <link rel="stylesheet" type="text/css" href="resert.css"> 
+	<link rel="stylesheet" type="text/css" href="formu.css"> 
+		</head>
+
+<body>
+	<header>
+	
+			<img src="guardia.png" alt"guardia urbano" height="250" width="300"/>
+			
+			<div >
+			
+			<h1>Turismo en España</h1>
+			
+			
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="t-deport.html" title="Ir a la web de turismo deportivo">Turismo Deportivo</a></li>
+			<li><a href="t-rural.html" title="Ir a la web del turismo rural">Turismo rural</a></li>
+			<li><a href="" title="Enlace vacio">Inicio</a></li>
+			<li><a href="t-playas.html" title="Ir a la web de playas">Turismo de playa</a></li>
+		</ul>
+	</nav>
+	
+
+		<h4>Hagamos un comentario</h4>
+	<hr/>
+	
+	<form action="">
+	<fieldset class="izq">
+	<legend>Datos personales</legend>
+		<p><label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre"size="50" placeholder="Su nombre" required=""></p>
+			<br>
+			<p><label for="apellido1">Apellidos:</label>
+				<input type="text" name="apellido1"  ide="apellido1"size="50" placeholder="Sus apellidos"required=""> </p>
+				<br>
+				<p><label for="direccion">2º Apelido</label>
+					<input type="text" name="direcion" id="direccion"size="50" required=""></p>
+					<br>
+					<p><label for="email">E-mail</label>
+						<input type="email" id="email" name="" size="50"required></p>
+						<br>
+						<p><label for="web">Pagina Web</label>
+							<input type="url" name="web" id="web" size="50" required=""></p>
+						</fieldset>
+
+			<fieldset class="dcha">	
+<legend>Otros datos</legend>			
+		<p><label for="comentario">Enviar Comentario</label>
+		
+		
+					<textarea rows="4" cols="30" name="comentario" placeholder="Añada lo que quiere..."></textarea></p>
+					
+					<p><label for="sexo">Sexo:</label><br>
+					<input name="sexo" type="radio"/>Masculino<br>
+					<input name="sexo" type="radio" checked/>Femenino<br>
+					
+					<p>Elija las excursiones:<br>
+				
+				<input type="text" list="excursion">
+				<datalist id="excursion">
+					<option value="Casino"></option>
+					<option value="Bodega"></option>
+					<option value="Espectaculo"></option>
+					<option value="Cuevas"></option>
+					<option value="Fabrica"></option>
+					<option value="Futbol"></option>
+					</datalist>
+					</p>
+					</fieldset>
+					</form>
+					<!-- <p><label for="comentario">Enviar Comentario</label> -->
+		<!-- <p><button><img src="ok.png" alt="enviar" width="15" height="15">
+		Enviar comentario</button></p> -->
+		<p><input type="submit" value="Enviar"/><input type="reset" value="borrar"/></p>
+		
+	
+	</body>
+</html>
