@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>turismo2</title>
@@ -108,7 +108,9 @@
 	<hr/>
 	<fieldset>
 	<legend>Datos personales</legend>
-	<form action="">
+
+	<!-- <form action="mailto:montalvillo@outlook.com" enctype="text/plaint" method="post"> esto envia el comentario atraves el correo -->
+	 <form action="">
 		<p><label for="nombre">Nombre</label>
 			<input type="text" name="nombre" id="nombre"size="50" required=""></p>
 			<br>
@@ -123,6 +125,7 @@
 						<br>
 						<p><label for="web">Pagina Web</label>
 							<input type="url" name="web" id="web" size="50" required=""></p>
+							<!-- <p><input type="submit" value="Enviar comentario"></p> -->
 						</fieldset>
 
 			<fieldset>	
@@ -148,17 +151,18 @@
 					<option value="Futbol"></option>
 					</datalist>
 					</p>
-					</fieldset>
-					<p><label for="comentario">Enviar Comentario</label>
-		<p><button><img src="ok.png" alt="enviar" width="15" height="15">
-		Enviar</button></p
+					</fieldeset>
+					
+					<!--  <button onclick="alert('Esta es una accion de JavaScerit')">haga clil aqui</button> -->
+
+					<p><button for="comentario">Enviar Comentario</button>
+							<br>
 		<input type="reset" name=""/>
+
 		
 	
-	
-
-
-	<footer>
+		
+	<!--  <footer>
 		
 		<p class="azul">El autor de esta pagina es :<span class="cursivanegrita">Juanito</span></p>
 		<p>Si quiere obtener mas informacion escribanos a:<a href="mailto:montalvillo@outlook.com">montalvillo@outloot.com</a></p>
@@ -166,10 +170,11 @@
 
 
 	
-	</footer>
+	</footer> -->
 	
 </body>
 </html>
+
 
 
 <!--  <h4>Hagamos un comentario</h4>
@@ -192,14 +197,23 @@
 						<p><label for="web">Pagina Web</label>
 							<input type="url" name="web" id="web" size="50" required=""></p>
 						</fieldset>
+
 						<fieldset>
 							<legend>Otros Datos</legend>
+
+
 				<p><label for="comentario">Comentemos</label>
 					<textarea rows="4" cols="30" name="comentario" placeholder="Añada lo que quiere..."></textarea></p>
+
+
+
 					<p><label for="sexo">Sexo con botones de opcion</label><br> 
 						<input type="radio" name="sexo" checked />Masculino<br>
 						<input type="radio" name="sexo"/>Femenino<br>
+
 					
+
+
 						
 	<p>
 		Elija la excursion con lista desplegable 
@@ -213,11 +227,14 @@
 			<option>Futbol</option>
 		</select>
 	</p>
+
+
 <p><input type="submit"></p>
 		<br>
 		<input type="reset" name=""/>
 	
 			
 </fieldset>
+
 		</form>		
 	 -->
