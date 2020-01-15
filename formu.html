@@ -41,45 +41,49 @@
 			<p><label for="apellido1">Apellidos:</label>
 				<input type="text" name="apellido1"  ide="apellido1"size="50" placeholder="Sus apellidos"required=""> </p>
 				<br>
-				<p><label for="direccion">2º Apelido</label>
-					<input type="text" name="direcion" id="direccion"size="50" required=""></p>
+				<p><label for="direccion">Direccion:</label>
+					<input type="text" name="direcion" id="direccion"size="50" placeholder="Su direccion" required=""></p>
 					<br>
-					<p><label for="email">E-mail</label>
+					<p><label for="codigo">Codigo Postal</label>
+						<input type="tex" id="codigo" name="" size="50" placeholder="CP" required></p>
+						<br>
+					
+					<p><label for="pais">Pais</label>
+						<input type="text" id="email" name="" size="50" value="España" required></p>
+						<br>
+						
+						<p><label for="email">E-mail</label>
 						<input type="email" id="email" name="" size="50"required></p>
 						<br>
 						<p><label for="web">Pagina Web</label>
 							<input type="url" name="web" id="web" size="50" required=""></p>
-						</fieldset>
-
-			<fieldset class="dcha">	
-<legend>Otros datos</legend>			
-		<p><label for="comentario">Enviar Comentario</label>
-		
-		
-					<textarea rows="4" cols="30" name="comentario" placeholder="Añada lo que quiere..."></textarea></p>
-					
-					<p><label for="sexo">Sexo:</label><br>
+						
+						<fieldset>
+					<legend>Sexo:</legend>
 					<input name="sexo" type="radio"/>Masculino<br>
 					<input name="sexo" type="radio" checked/>Femenino<br>
+						</fieldset>
+						</fieldset>
+							
+					<fieldset class="dcha">	
+						
+							<input name="sexo" type="radio"/>Masculino<br>
+					<input name="sexo" type="radio" checked/>Femenino<br>
 					
-					<p>Elija las excursiones:<br>
-				
-				<input type="text" list="excursion">
-				<datalist id="excursion">
-					<option value="Casino"></option>
-					<option value="Bodega"></option>
-					<option value="Espectaculo"></option>
-					<option value="Cuevas"></option>
-					<option value="Fabrica"></option>
-					<option value="Futbol"></option>
-					</datalist>
-					</p>
 					</fieldset>
+					<p class="botones"><input type="submit" value="Enviar"/><input type="reset" value="borrar"/></p>
+					
+						<input name="sexo" type="radio"/>Masculino<br>
+					<input name="sexo" type="radio" checked/>Femenino<br>
+					
+					<p>Elige:<br>
+					<input type="checkbox" name="uno">Uno<br>
+					</p>
+						
 					</form>
 					<!-- <p><label for="comentario">Enviar Comentario</label> -->
 		<!-- <p><button><img src="ok.png" alt="enviar" width="15" height="15">
 		Enviar comentario</button></p> -->
-		<p><input type="submit" value="Enviar"/><input type="reset" value="borrar"/></p>
 		
 	
 	</body>
