@@ -1,100 +1,159 @@
 body{
 
- 	font: 90% arial,verdana,helvetica,sans-serif;
- 	width: 960px;
+ 	font: 90% arial;
+ 	width: 1100px;
  	margin: 0 auto;
  	/* border: thin solid red; */
- 	background: green 30%;
- 	background: linear-gradient(#f69d3c, #3f87a6);
+ 	/*background: green 30%;
+ 	background: linear-gradient(#f69d3c, #3f87a6);*/
+ 	background-color: #F2F3F4  
 	
 
  }
 
- header{
- 	background: #FFF0F5;
+ header div img{
+
+	float: right;
 
 }
- header div{
 
- 	height:160px;
- 	width: 640px;
-	border: medium solid green;
-	float:right;
-	background: -webkit-linear-gradient(left,#f0f0f0  10%,#ff4500);
-	padding-top: 90px;
-	border-radius: 0px 11px 11px 0px;
-	box-shadow: 7px 7px 12px black;
-	
+@font-face{
+
+	font-family: "miletra";
+	src:url("Lewishandsemibold.ttf");
 }
-header h1{
-	color:#ffd700;
-	font-size: 4em;
-	text-align: center;
-	text-shadow: 3px 3px 2px red;
-}
+
+ 
+
 header img{
-	border-radius: 11px 0px 0px 11px;
-	margin-left: 10px;
-	box-shadow: 7px 7px 12px #777;
-	float: left;
-	margin-bottom: 10px; 
-	margin: 0px 0px 20px ;
-}
-nav{
-
-	background: black;
-	clear: both;
-
-
-}
-nav li{
-	text-decoration: none;
-	display: inline;
-	margin: 0px 20px 0px 20px;
-line-height: 40px;
-padding: 10px;
-
+	float:left;
 }
 
 
-nav a{
+header h1{
 
-text-align: center;
-text-decoration: none;
-color:#777;
-font-weight: bold;
-
-
-}
-nav a:link{
-
-
-	color:orange; /*Pendiente de estar visitad*/
-}
-
-nav a:visited{
-
-	color:#dc143c;/* Se ponen en rojo los enlaces visitados*/
-
-}
-nav li:hover{
-
-background-color: white; /* cambia el fondo a este color*/
-}
-
-nav a:active{
-
-	color:#000080;/* cambia el fondo de texto cuando se pulsa sobre el enlace*/
+	font-size: 6em;
+	text-align: center;
+	font-family: "miletra";
+	color:red;
+	font-weight: bold;
 }
 
 
+
+
+/*h2{
+
+	text-align: center;
+	font-size: 2em;
+	color: blue;
+}*/
+
+
+h4{
+
+	font-size: 1.9em;
+	text-align: center;
+}
 
 .izq{
+
 float:left;
-width:450px;
+text-align:left; ; 
+padding: 20px;
+font-size: 1.1em;
+margin:0px 25px;
+padding: 30px;
+border-radius: 11px 11px 11px 11px;
+box-shadow: 7px 7px 12px #808B96;
 
 }
-.dcha{
-float:right;
-width:450px;
+.izq label{
+
+	color: #800000;
+	text-align:right;
+	font-size: 1em;
 }
+
+.izq legend{
+
+	color: blue;
+	font-size: 1.5em;
+}
+
+/*.izq p {
+	color:red;
+	text-align:right;
+	font-size: 1em;
+
+}*/
+.izq input{
+	height: 20px;
+	font-size: 1em;
+	color:red;
+}
+
+.sexo{
+margin: 20px;
+border-radius: 11px 11px 11px 11px;
+box-shadow: 7px 7px 12px #808B96;
+
+}
+
+.sexo p{
+	color: grey;
+	text-align:left;
+}
+
+.dcha{
+
+width:540px;
+border-radius: 11px 11px 11px 11px;
+box-shadow: 7px 7px 12px #808B96;
+height: 600px;
+
+
+}
+
+.dcha legend{
+
+	color: blue;
+	font-size: 1.5em;
+
+}
+.dcha p {
+
+	color: green;
+	font-size: 1em;
+	
+
+}
+
+.dcha input{
+	height: 20px;
+	font-size: 1em;
+}
+
+.dcha label{
+	/*color: orange;*/
+	font-size: 1.5em;
+}
+
+
+
+
+
+.botones input{
+width: 100px;
+height: 40px;
+font-size: 1em;
+background-color: #B2BABB;
+margin: 0px 200px 0px 20px;
+}
+
+
+
+
+
+
+
