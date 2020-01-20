@@ -1,86 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Formulario</title>
-	 <link rel="stylesheet" type="text/css" href="resert.css"> 
+	<title>formulario</title>
+	<link rel="stylesheet" type="text/css" href="resert.css"> 
 	<link rel="stylesheet" type="text/css" href="formu.css"> 
-		</head>
+</head>
 
-<body>
-	<header>
+<header>
 	
-			<img src="guardia.png" alt"guardia urbano" height="250" width="300"/>
+<div>
+	<img src="apartamento.jpeg" alt"guardia urbano" height="150" width="200"/>
 			
-			<div >
+			</div>
 			
-			<h1>Turismo en España</h1>
-			
-			
-		</div>
-	</header>
 
-	<nav>
-		<ul>
-			<li><a href="t-deport.html" title="Ir a la web de turismo deportivo">Turismo Deportivo</a></li>
-			<li><a href="t-rural.html" title="Ir a la web del turismo rural">Turismo rural</a></li>
-			<li><a href="" title="Enlace vacio">Inicio</a></li>
-			<li><a href="t-playas.html" title="Ir a la web de playas">Turismo de playa</a></li>
-		</ul>
-	</nav>
+	<img src="interior.jpeg" alt"interiores" height="150" width="200">
+
+	<h1>
+		Apartamentos Turisticos
+	</h1>
+
+</header>
+
+
+	
 	
 
-		<h4>Hagamos un comentario</h4>
+		<h4>Cumplimente el formulario de reserva</h4>
 	<hr/>
 	
 	<form action="">
 	<fieldset class="izq">
 	<legend>Datos personales</legend>
 		<p><label for="nombre">Nombre:</label>
-			<input type="text" name="nombre" id="nombre"size="50" placeholder="Su nombre" required=""></p>
+			<input type="text" name="nombre" id="nombre"size="35" placeholder="Su nombre" required=""></p>
 			<br>
 			<p><label for="apellido1">Apellidos:</label>
-				<input type="text" name="apellido1"  ide="apellido1"size="50" placeholder="Sus apellidos"required=""> </p>
+				<input type="text" name="apellido1"  ide="apellido1"size="35" placeholder="Sus apellidos"required=""> </p>
 				<br>
 				<p><label for="direccion">Direccion:</label>
-					<input type="text" name="direcion" id="direccion"size="50" placeholder="Su direccion" required=""></p>
+					<input type="text" name="direcion" id="direccion"size="35" placeholder="Su direccion" required=""></p>
 					<br>
-					<p><label for="codigo">Codigo Postal</label>
-						<input type="tex" id="codigo" name="" size="50" placeholder="CP" required></p>
+					<p><label for="codigo">Codigo Postal:</label>
+						<input type="tex" id="codigo" name="" size="35" placeholder="CP" required></p>
 						<br>
 					
-					<p><label for="pais">Pais</label>
-						<input type="text" id="email" name="" size="50" value="España" required></p>
+					<p><label for="pais">Pais:</label>
+						<input type="text" id="pais" name="" size="35" value="España" required></p>
 						<br>
 						
-						<p><label for="email">E-mail</label>
-						<input type="email" id="email" name="" size="50"required></p>
+						<p><label for="email">E-mail:</label>
+						<input type="email" id="email" name="" size="35"required></p>
 						<br>
-						<p><label for="web">Pagina Web</label>
-							<input type="url" name="web" id="web" size="50" required=""></p>
+						<p><label for="web">Pagina Web:</label>
+							<input type="url" name="web" id="web" size="35" required=""></p>
 						
-						<fieldset>
+						<fieldset class="sexo">
 					<legend>Sexo:</legend>
-					<input name="sexo" type="radio"/>Masculino<br>
-					<input name="sexo" type="radio" checked/>Femenino<br>
+					<p><input name="sexo" type="radio"/>Masculino</p><br>
+					<p><input name="sexo" type="radio" checked/>Femenino</p><br>
 						</fieldset>
 						</fieldset>
 							
 					<fieldset class="dcha">	
+						<legend>Indiquenos sus preferencias</legend>
+
+						<div style="width: 30%;float: left;">
+							
+				<label>Seleccione un mes de reserva:</label>
+							
+						</div>
+
+			
+					<div style="width:50%; float: left;">
 						
-							<input name="sexo" type="radio"/>Masculino<br>
-					<input name="sexo" type="radio" checked/>Femenino<br>
+					<p><input type="checkbox" name="uno">Enero</p>
+					<p><input type="checkbox" name="febrero">Febrero</p>
+					<p><input type="checkbox" name="febrero">Marzo</p>
+					<p><input type="checkbox" name="febrero">Abril</p>
+					<p><input type="checkbox" name="febrero">Mayo</p>
+					<p><input type="checkbox" name="febrero">Junio</p>
+					</div>
+
 					
-					</fieldset>
-					<p class="botones"><input type="submit" value="Enviar"/><input type="reset" value="borrar"/></p>
+					<p><input type="checkbox" name="febrero">Julio</p>
+					<p><input type="checkbox" name="febrero">Agosto</p>
+					<p><input type="checkbox" name="febrero">Septiembre</p>
+					<p><input type="checkbox" name="febrero">Octubre</p>
+					<p><input type="checkbox" name="febrero">Noviembre</p>
+					<p><input type="checkbox" name="febrero">Diciembre</p>
+					<br>
 					
-						<input name="sexo" type="radio"/>Masculino<br>
-					<input name="sexo" type="radio" checked/>Femenino<br>
 					
-					<p>Elige:<br>
-					<input type="checkbox" name="uno">Uno<br>
-					</p>
-						
+					<label>Elija un regalo:</label>
+					<br>
+
+					<input type="text" list="regalo">
+					<datalist id="regalo">
+						<option value="Visita a Museo"></option>
+						<option value="Ruta de los pinchos"></option>
+						<option value="Excursion a cueva 'Miranda'"></option>
+						<option value="Excursion a meandros del rio 'Pale'"></option>
+						<option value="Ruta casco antiguo"></option>
+						<option value="Excursion a castillo'Tres Murallas'"></option>
+						</datalist>
+
+						<fieldset>
+							<legend>Eliga un medio de transporte</legend>
+							<input name="transporte" type="radio"/>Niguno<br>
+					<input name="transporte" type="radio" />Bicicleta<br>
+					<input name="transporte" type="radio" />Triciclo<br>
+					<input name="transporte" type="radio" />Patinete<br>
+					<input name="transporte" type="radio" />Carrito electrico<br>
+
+
+						</fieldset>
+					
+			
 					</form>
+					<br>
+					<br>
+					<p><label for="cantidad">Numero medio de trasporte</label>
+						<input type="url" name="web" id="web" size="10" required=""></p>
+						<br>
+						<b>
+
+						<p><label for="comentario">Enviar Comentario</label>
+		
+		
+					<textarea rows="4" cols="30" name="comentario" placeholder="Añada lo que quiere..."></textarea></p>
+				</fieldset>
+
+
+					<p class="botones"><input type="submit" value="Enviar" id="boton"/>  <input type="reset" value="Borrar"/></p>
+					
 					<!-- <p><label for="comentario">Enviar Comentario</label> -->
 		<!-- <p><button><img src="ok.png" alt="enviar" width="15" height="15">
 		Enviar comentario</button></p> -->
