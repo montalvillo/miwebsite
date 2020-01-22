@@ -1,0 +1,148 @@
+
+
+
+body{
+	font:120% arial,verdana,helvatica,sans-serif;
+	width: 960px; 
+	margin: 0 auto;
+	/*border: thin solid black;*/
+	background: #D7F0F0;
+}
+
+
+
+
+header div{ 
+	height: 160px;
+	width: 640px;
+	background: linear-gradient(#f69d3c, #3f87a6);
+	float:right; 
+	padding-top: 90px; 
+	border-radius: 0px 11px 11px 0px; 
+	margin-right: 10px;
+	box-shadow: 7px 7px 12px #692FE5;
+}
+header h1{
+color: #E8B11E;
+font-size: 3.5em;
+text-align: center;
+text-shadow: 3px 3px 2px red;
+}
+header img{
+	float:left;
+	/*position: relative; /*posicion con respacto a su posicion normal o estatica*/
+	/*top: 200px;/* distancia desde el borde superior*/
+	/*left:200px;/*distancia desde la parte izquiersa*/
+	/*position: absolute;/*crea un elemento independiente*/
+	/*position: fixed;/*posicionamiento fijo no se mueve aunque la pagina se desplace*/
+	border-radius: 11px 0px 0px 11px;
+	margin-left: 10px ;
+	box-shadow: 7px 7px 12px red;
+	margin: 5px;
+	/*visibility: hidden;/* oculta la imagen pero deja el hueco*/
+	/*display: none;/*elimina el elemento y no reserva el espacio*/
+	
+	}
+	header nav{
+		background-color: black; 
+		clear: both;
+		text-align: center;
+	}
+	nav li{ /* formato del nav li*/
+	display: inline;
+	line-height: 40px;
+	margin: 20px;
+	
+}
+
+
+nav li a:hover{
+
+	text-transform: uppercase;/* pone en mayusculas*/
+	color:red;/* pone el texto en color*/
+}
+nav a{
+	text-align: center;
+	text-decoration: none;
+	color: #FFF8DC;
+	font-weight: bold; 
+
+
+	}
+
+h1{
+	font-size: 2em;
+	text-align: center;
+}
+
+img{
+
+	float:left;
+}
+
+
+
+
+h2{
+
+	color: blue;
+	text-align: center;
+
+}
+
+p{
+	
+	text-align: center;
+}
+
+
+
+section {
+
+	width: 960px;
+	/*background:red;*/
+	float:left;
+	/*background: -webkit-linear-gradient(#ccccf5  ,#f0f0f0);*/
+	/*margin: 10px 0px 10px 10px;
+	padding: 20px;
+	border-radius: 11px 11px 11px 11px;
+	box-shadow: 7px 7px 12px black;*/
+}
+section article{
+
+	display: table-cell;
+	width: 320px;
+	/*background: -webkit-linear-gradient(bottom,#F8F8FF 10%,#696969);
+	padding: 10px;
+	border-radius: 1px ;
+	border: medium solid blue;
+	border-radius: 11px 11px 11px 11px;*/
+	}
+
+section p{
+
+text-align: center;
+}
+section article img{
+
+	display: block;
+	margin: 0px 0px 0px 150px;
+	
+
+
+/*margin:0px 0px 0px 150px;*/
+}
+
+
+h3{
+	color: blue;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
