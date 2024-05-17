@@ -1,0 +1,178 @@
+﻿body {
+    font: 120% sans-serif;
+    background: #E6F5F5;
+    margin: 10px 10px 10px 10px;
+    /*border: thin solid black;*/
+    background: #D7F0F0;
+}
+
+
+
+
+    
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Varela+Round");
+    @import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+
+    
+
+p {
+    font-size: 20px;
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+
+header h1 {
+    color: red;
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+}
+.container {
+    display:flex;
+    gap: 100px;
+    align-items:center;
+    justify-content:c;
+    font-family: "Varela Round, sans-serif";
+    line-height: 1.5em;
+}
+
+
+.item { /* pone  fondo color naranja*/
+    --color: #eb904b;
+    width: 185px;
+    background-color: var(--color);
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-shadow: #3c40434d 0px 1px 2px 0px,
+        #3c404326 0px 1px 3px 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.item::after { /* pone las pestanas de color naranja*/
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 2;
+    height: 80%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--color);
+    border-width: 40px 40px 40px 40px;
+    filter: drop-shadow(5px 0 4px #00000094);
+    transition: filter .5s;
+}
+
+
+  .item:nth-child(2) { /*pone la carpeta dos de rojo*/
+        --color:red;
+    }
+
+
+
+
+    .item:nth-child(3) /*pone la carpeta tres  de verde */ {
+        --color: #119630;
+    }
+
+
+    .item:nth-child(4) { /* pone la carpeta cuatro de azul    #0000FF*/
+        --color: #0000FF;
+    }
+
+    .item:nth-child(5) { /* pone la carpeta cinco de color verdosillo*/
+        --color: #17A589;
+    }
+
+
+  
+
+    .layer { /*fondo de las carpetas blanco*/
+        background-color: #f2f2f2;
+        border: 1px solid #fff;
+        border-radius: inherit;
+        padding: 20px;
+        box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px, #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px #00000012 0px 32px 64px;
+        position: relative;
+        left: 10px;
+        transition: left 1s;
+    }
+
+
+h3 /*pone los titulos del mismo color que el fondo*/ {
+    font-weight: 700;
+    text-align: center;
+    color: var(--color);
+}
+
+h4 { /* color de los h4*/
+
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px,
+}
+
+
+
+p /* color de las p*/ {
+    color: #555;
+}
+
+
+
+span { /* alturas pone boton*/
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: var(--color);
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+    box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px, #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px, #00000012 0px 32px 64px;
+    font-size: 14px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.item:hover:after { /* desplaza el fondo*/
+    filter: drop-shadow(5px o 4px #0000001a);
+}
+.item:hover .layer
+    {
+        left: 50px
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
