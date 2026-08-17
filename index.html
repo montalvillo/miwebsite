@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Pagina de Juanito</title>
+  <img src="pano.jpeg" width="100%" height="200" alt="Equipos de última generación">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    min-height:100vh;
+}
+
+/*-------------------
+    COLUMNA IZQUIERDA
+-------------------*/
+
+.menu{
+    background:#2c3e50;
+    color:white;
+    padding:25px;
+}
+
+.menu h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+details{
+    margin-bottom:15px;
+    background:#34495e;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+summary{
+    padding:15px;
+    cursor:pointer;
+    font-weight:bold;
+    list-style:none;
+}
+
+summary:hover{
+    background:#1abc9c;
+}
+
+details a{
+    display:block;
+    padding:12px 20px;
+    text-decoration:none;
+    color:white;
+    background:#3d566e;
+    transition:.3s;
+}
+
+details a:hover{
+    background:#16a085;
+}
+
+
+/*-------------------
+    COLUMNA DERECHA
+-------------------*/
+
+.galeria{
+    padding:30px;
+}
+
+.galeria h1{
+    margin-bottom:30px;
+    color:#333;
+}
+
+.imagenes{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+.tarjeta{
+
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+
+}
+
+.tarjeta:hover{
+
+    transform:scale(1.03);
+
+}
+
+.tarjeta img{
+
+    width:100%;
+    height:180px;
+    object-fit:cover;
+
+}
+
+.tarjeta p{
+
+    padding:15px;
+    text-align:center;
+    color:#333;
+    font-weight:bold;
+
+}
+
+.tarjeta a{
+
+    text-decoration:none;
+
+}
+
+/*-------------------
+ RESPONSIVE
+-------------------*/
+
+@media(max-width:900px){
+
+.contenedor{
+
+grid-template-columns:1fr;
+
+}
+
+.menu{
+
+width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+
+    <!-- COLUMNA IZQUIERDA -->
+
+    <aside class="menu">
+
+        <h2>Mis articulos</h2>
+
+        <details open>
+
+            <summary>Articulos</summary>
+
+            <!-- index.html -->
+         
+            <a href="articulos.html#Anatomia de un Gobierno">Anatomia de un Gobierno</a>
+             
+            <a href="articulos.html#Seudo español">Seudo español</a>
+            
+            <a href="articulos.html#La fontanera">La Fontanera</a>
+
+           <a href="articulos.html#El Bola">El bola</a>
+
+        </details>
+
+      <!--otra banda -->
+
+      <!--  <details>
+
+            <summary>Tecnología</summary>
+
+            <a href="https://www.google.com" target="_blank">Google</a>
+
+            <a href="https://www.github.com" target="_blank">GitHub</a>
+
+            <a href="https://openai.com" target="_blank">OpenAI</a>
+
+        </details> -->
+
+       <!--otra banda -->
+      <!--  <details>
+
+            <summary>Noticias</summary>
+
+            <a href="https://elpais.com" target="_blank">El País</a>
+
+            <a href="https://www.bbc.com/mundo" target="_blank">BBC Mundo</a>
+
+            <a href="https://www.rtve.es" target="_blank">RTVE</a>
+
+        </details> -->
+
+    </aside>
+
+    <!-- COLUMNA DERECHA -->
+
+    <main class="galeria">
+
+        <h1>Mis Libros</h1>
+
+        <div class="imagenes">
+
+            <div class="tarjeta">
+              
+              <!--  <a href="https://pixabay.com/" target="_blank"> -->
+                  
+                    
+               
+                 <img src="PortadaNadie.jpg" style="width:100%; height:180px; object-fit:cover;">
+                
+                 <a href="NadieRes.html" target="_blank">
+                
+                    
+                 <p>Nadie me LLorara ver libro</p>
+                 </a>
+                
+            </div>
+
+            
+            
+            <div class="tarjeta">
+              <!-- <a href="https://unsplash.com/" target="_blank"> -->
+                    
+                <img src="NadieTrasera.png" style="width:100%; height:180px; object-fit:cover;">
+                     
+                    <p>Nadie me Llorara,</p>
+                    
+                </a>
+            </div>
+
+            <div class="tarjeta">
+                <a href="NadieRes.html" target="_blank">
+                  
+                    <img src="https://picsum.photos/400/300?random=3" alt="">
+                   
+                    <p>Nadie</p>
+                </a>
+            </div>
+
+            <div class="tarjeta">
+                <a href="https://www.nationalgeographic.com/" target="_blank">
+                    <img src="https://picsum.photos/400/300?random=4" alt="">
+                    <p>Naturaleza</p>
+                </a>
+            </div>
+
+            <div class="tarjeta">
+                <a href="https://www.wikipedia.org/" target="_blank">
+                    <img src="https://picsum.photos/400/300?random=5" alt="">
+                    <p>Arquitectura</p>
+                </a>
+            </div>
+
+            <div class="tarjeta">
+                <a href="https://www.flickr.com/" target="_blank">
+                    <img src="https://picsum.photos/400/300?random=6" alt="">
+                    <p>Fotografía</p>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
