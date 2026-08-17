@@ -1,0 +1,492 @@
+
+
+  
+  <!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nadie me llorará</title>
+    <link rel="stylesheet" type="text/css" href="reset">
+
+    <link rel="stylesheet" type="text/css" href="seras1.css">
+
+    
+</head>
+<header>
+
+<h1>Nadie me llorara</h1>
+</header>
+    
+<section>
+
+ <p>Te dejo el primer capitulo del libro y parte de otro, para libro completo montalvillo@outlook.com </p>
+
+
+
+</section>
+
+
+
+  
+  <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+
+            /* FOTO DEL PARQUE */
+            background-image: url("Campo.jpeg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* Ligero oscurecimiento para que el texto se vea mejor */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0, 0, 0, 0.08);
+
+            pointer-events: none;
+        }
+
+
+        /* BOTÓN VOLVER */
+
+        #volver {
+
+            position: fixed;
+
+            top: 20px;
+            left: 20px;
+
+            z-index: 1000;
+
+            color: white;
+
+            text-decoration: none;
+
+            background: rgba(0, 0, 0, 0.55);
+
+            padding: 10px 16px;
+
+            border-radius: 8px;
+
+            backdrop-filter: blur(4px);
+        }
+
+
+        #volver:hover {
+
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+
+        /* CONTENEDOR DEL PDF */
+
+        #pdf-viewer {
+
+            position: fixed;
+
+            inset: 0;
+
+            overflow-y: auto;
+
+            overflow-x: hidden;
+
+            padding: 70px 20px 40px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 30px;
+
+            scrollbar-width: thin;
+        }
+
+
+        /* CADA PÁGINA */
+
+        .page {
+
+            position: relative;
+
+            width: min(850px, 92vw);
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+
+        /* CANVAS TRANSPARENTE */
+
+        .page canvas {
+
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+
+            background: transparent;
+        }
+
+
+        /* MENSAJE DE CARGA */
+
+        #loading {
+
+            position: fixed;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            color: white;
+
+            background: rgba(0, 0, 0, 0.55);
+
+            padding: 14px 20px;
+
+            border-radius: 10px;
+
+            z-index: 2000;
+        }
+
+
+        /* MÓVIL */
+
+        @media (max-width: 600px) {
+
+            #pdf-viewer {
+
+                padding: 60px 8px 25px;
+
+                gap: 15px;
+            }
+
+            .page {
+
+                width: 96vw;
+            }
+
+            #volver {
+
+                top: 10px;
+
+                left: 10px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- BOTÓN VOLVER -->
+
+    <a id="volver" href="javascript:history.back()">
+        ← Volver Atrás
+    </a>
+
+
+    <!-- MENSAJE -->
+
+    <div id="loading">
+        Cargando PDF...
+    </div>
+
+
+    <!-- AQUÍ APARECERÁ EL TEXTO -->
+
+    <main id="pdf-viewer"></main>
+
+
+    <script>
+
+        /*
+         * Configuración de PDF.js
+         */
+
+        pdfjsLib.GlobalWorkerOptions.workerSrc =
+            "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+
+        /*
+         * Nombre de tu PDF
+         */
+
+        const PDF_URL= "ResumenNadie.pdf";
+          
+        
+
+        
+
+
+        /*
+         * ESTA FUNCIÓN ELIMINA EL BLANCO
+         *
+         * Blanco = transparente
+         * Gris claro = semitransparente
+         * Negro = visible
+         */
+
+        function quitarBlanco(canvas) {
+
+            const ctx = canvas.getContext("2d", {
+                willReadFrequently: true
+            });
+
+
+            const image = ctx.getImageData(
+                0,
+                0,
+                canvas.width,
+                canvas.height
+            );
+
+
+            const pixels = image.data;
+
+
+            for (let i = 0; i < pixels.length; i += 4) {
+
+                const r = pixels[i];
+
+                const g = pixels[i + 1];
+
+                const b = pixels[i + 2];
+
+
+                /*
+                 * Calculamos la luminosidad
+                 */
+
+                const luminosidad =
+                    0.299 * r +
+                    0.587 * g +
+                    0.114 * b;
+
+
+                /*
+                 * BLANCO:
+                 * lo hacemos totalmente transparente
+                 */
+
+                if (luminosidad >= 245) {
+
+                    pixels[i + 3] = 0;
+
+                }
+
+
+                /*
+                 * TONOS GRISES:
+                 * transparencia progresiva
+                 */
+
+                else {
+
+                    const alpha =
+                        Math.min(
+                            255,
+                            Math.max(
+                                0,
+                                (245 - luminosidad) * 1.35
+                            )
+                        );
+
+                    pixels[i + 3] = alpha;
+
+                }
+
+            }
+
+
+            /*
+             * Aplicamos los cambios
+             */
+
+            ctx.putImageData(image, 0, 0);
+        }
+
+
+
+        /*
+         * CARGAR PDF
+         */
+
+        async function cargarPDF() {
+
+            try {
+
+                const pdf =
+                    await pdfjsLib
+                        .getDocument(PDF_URL)
+                        .promise;
+
+
+                const viewer =
+                    document.getElementById("pdf-viewer");
+
+
+                /*
+                 * Cargamos todas las páginas
+                 */
+
+                for (
+                    let numero = 1;
+                    numero <= pdf.numPages;
+                    numero++
+                ) {
+
+                    const page =
+                        await pdf.getPage(numero);
+
+
+                    /*
+                     * Calidad del PDF
+                     */
+
+                    const viewport =
+                        page.getViewport({
+                            scale: 2
+                        });
+
+
+                    /*
+                     * Contenedor de la página
+                     */
+
+                    const contenedor =
+                        document.createElement("div");
+
+                    contenedor.className = "page";
+
+
+                    /*
+                     * Canvas
+                     */
+
+                    const canvas =
+                        document.createElement("canvas");
+
+
+                    canvas.width =
+                        viewport.width;
+
+                    canvas.height =
+                        viewport.height;
+
+
+                    contenedor.appendChild(canvas);
+
+                    viewer.appendChild(contenedor);
+
+
+                    /*
+                     * Contexto transparente
+                     */
+
+                    const contexto =
+                        canvas.getContext("2d", {
+                            alpha: true,
+                            willReadFrequently: true
+                        });
+
+
+                    /*
+                     * Renderizamos PDF
+                     */
+
+                    await page.render({
+
+                        canvasContext: contexto,
+
+                        viewport: viewport,
+
+                        background: "rgba(0,0,0,0)"
+
+                    }).promise;
+
+
+                    /*
+                     * ELIMINAMOS EL FONDO BLANCO
+                     */
+
+                    quitarBlanco(canvas);
+                }
+
+
+                /*
+                 * Quitamos "Cargando PDF..."
+                 */
+
+                document
+                    .getElementById("loading")
+                    .remove();
+
+
+            }
+
+            catch (error) {
+
+                console.error(error);
+
+                document
+                    .getElementById("loading")
+                    .textContent =
+                    "No se pudo cargar el PDF.";
+
+            }
+
+        }
+
+
+        /*
+         * INICIAR
+         */
+
+        cargarPDF();
+
+    </script>
+
+</body>
+
+</html>
