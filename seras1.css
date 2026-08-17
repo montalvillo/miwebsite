@@ -1,0 +1,38 @@
+
+body{
+
+
+background-image: url("Campo.jpeg"); 
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-position: center;
+    height: 200vh;
+}
+.embed-wrapper {
+    width: min(700px, 85vw);
+    height: min(75vh, 700px);
+
+    background: rgba(255, 255, 255, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(3px);
+}
+ header h1 {
+    
+    color: rgba(189, 50, 103, 0.762);
+    font-size: 1.5;
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+    margin: 10px;
+ }
+ section {
+    padding: 20px;
+    color: #e0dbe6fb;
+    background-color: rgba(0, 0, 0, 0.5);
+}
