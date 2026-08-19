@@ -2,12 +2,12 @@
 body{
 
 
-background-image: url("Campo.jpeg"); 
+/*background-image: url("Campo.jpeg"); 
      background-size: cover;
      background-repeat: no-repeat;
     background-position: center;
     height: 200vh;
-}
+}*/
 .embed-wrapper {
     width: min(700px, 85vw);
     height: min(75vh, 700px);
