@@ -1,0 +1,95 @@
+body {
+   /* font: 100% arial,sans-serif;  /*tamaño fuente para todo el body*/
+   /* width: 1060px; /* tamaño del body a lo ancho*/
+   /* margin: 0 auto; /* margen exterior del body a lo ancho*/
+    /*border: thin solid black;
+    /* pone el bode con grosor, solido y de color */
+  /*  border-style: solid;*/
+ /*  border-color: black;*/
+   /* background: #f6f3f3; */
+
+
+
+   background-image: url("Campo.jpeg"); 
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-position: center;
+    height: 200vh;
+}
+
+ Anchura de la pagina
+
+   .pagina {  
+    width: 100%;
+    min-height: 40vh;
+   }
+
+       <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+          html, body {
+            width: 100%;
+               img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+    
+            height: 100%;
+               img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+    
+        }
+           img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+    
+
+           img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+/*   background-image: url("Campo.jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
+    background-position: center;
+    height: 200vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+   header h1 {
+    
+    color: rgba(189, 50, 103, 0.762);
+    font-size: 1.5;
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+    margin: 10px;
+}
+/*section {
+    padding: 20px;
+    color: #e0dbe6fb;
+    background-color: rgba(0, 0, 0, 0.5);
+}*/
+.dos embed {
+  position: static;
+  top: 40px;
+  left:10 px;
+  width:10 ;
+  z-index: 10;
+}
