@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La Pagina de Juanito</title>
+  <img src="Pano.webp" width="100%" height="200" alt="Valladolid">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns:100px 1fr;
+    min-height:00vh;
+}
+
+/*-------------------
+    COLUMNA IZQUIERDA
+-------------------*/
+
+.menu{
+    background:#2c3e50;
+    color:white;
+    padding:25px;
+    
+}
+
+.menu h2{
+    text-align:center;
+    margin-bottom:25px;
+    
+}
+
+details{
+    margin-bottom:15px;
+    background:#34495e;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+summary{
+    padding:15px;
+    cursor:pointer;
+    font-weight:bold;
+    list-style:none;
+}
+
+summary:hover{
+    background:#1abc9c;
+}
+
+details a{
+    display:block;
+    padding:12px 20px;
+    text-decoration:none;
+    color:white;
+    background:#3d566e;
+    transition:.3s;
+}
+
+details a:hover{
+    background:#16a085;
+}
+
+
+/*-------------------
+    COLUMNA DERECHA
+-------------------*/
+
+.galeria{
+    padding:10px;
+}
+
+.galeria h1{
+    margin-bottom:10px;
+    color:#333;
+}
+
+.imagenes{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+
+}
+
+.tarjeta{
+
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+
+}
+
+.tarjeta:hover{
+
+    transform:scale(1.03);
+
+}
+
+.tarjeta img{
+
+    width:100%;
+    height:180px;
+    object-fit:cover;
+
+}
+
+.tarjeta p{
+
+    padding:15px;
+    text-align:center;
+    color:#333;
+    font-weight:bold;
+
+}
+
+.tarjeta a{
+
+    text-decoration:none;
+
+}
+
+/*-------------------
+ RESPONSIVE
+-------------------*/
+
+@media(max-width:900px){
+}
+
+.contenedor{
+
+grid-template-columns:1fr;
+
+}
+
+.menu{
+
+width:100%;
+font-size: 30px;
+
+}
+
+
+ .select {
+            
+        font-size: 20px;
+ }
+        /* Aquí aumentas el texto de la lista desplegable */
+
+        
+    .option{
+         font-size:40 px;
+        padding:  10px; 
+    }
+
+        /* Si quieres que UNA sola opción sea más grande */
+        .texto-grande {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+
+
+   
+
+</style>
+
+</head>
+<body>
+    
+<select class = "select";id="menu" onchange= "if(this.value) window.location.href = this.value;">
+ 
+    <option value="" class="texto-grande">&#x1F600; Mis articulos, Selecciona&#x1F680;</option>
+   <option value="articulos.html#Todos somos culpables">Todos somos culpables</option>
+    <option value="articulos.html#Mocion de censura">Mocion de censura</option>
+  <option value="articulos.html#La Ratita Presumida">La Ratita presumida Los mundos de Yoli</option>
+   <option value="articulos.html#Pseudo español">Pseudo Español</option>
+  <option value="articulos.html#La Fontanera">La Fontanera</option>
+  
+</select>
+<br>
+<br>
+
+
+
+    <!-- COLUMNA DERECHA -->
+
+
+
+    <main class="galeria">
+
+        <h2>Mis Libros</h2>
+
+        <div class="imagenes">
+           
+            <!-- Inicio de libro Nadie me llorara-->
+
+         <div class="tarjeta">
+              
+         <img src="NadieP.webp" style="width:100%; height:180px; object-fit:cover;">
+                
+         <a href="NadieRes.html" target="_blank">
+                
+        <p>Nadie me LLorara  ver libro</p>
+        </a>
+         </div>
+<!-- Fin de libro de portada y enlace-->
+
+            <!--Trasera de libro-->
+    <div class="tarjeta">
+              
+     <img src="NadieT.webp" style="width:100%; height:180px; object-fit:cover;">
+                     
+     <p>Nadie me Llorara trasera</p>
+                    
+    </a>
+    </div>
+            
+<!-- Fin de trasera de libro Nadie me Llorara-->
+         
+        <!-- Inicio de libro La gata coja-->
+           
+             
+  <div class="tarjeta">
+              
+     <img src="GataP.webp" style="width:100%; height:180px; object-fit:cover;">
+                
+     <a href="GataRes.html" target="_blank">
+                
+    <p>La Gata Coja ver libro</p>
+    </a>
+     </div>
+
+<!--Fin de libro de portada y enlace-->
+ <!-- trasera del libro la gata coja-->
+
+ <div class="tarjeta">
+
+ <img src="GataT.webp" tyle="width:100%; height:180px; object-fit:cover;">
+
+   <p>La Gata Coja trasera</p>
+ </a>
+ </div>
+  <!-- fin de libro  trasera-->
+   <!-- fin del libro La gata coja-->
+
+         
+            <!-- Inicio de libro Seras un Angel-->
+
+<div class="tarjeta">
+              
+<img src="AngelP.webp" style="width:100%; height: 180px; object-fit:cover;">
+                
+<a href="SerasRes.html" target="_blank">
+                
+<p>Seras un Angel  ver libro</p>
+</a>
+</div>
+<!-- Fin de libro Seras un Angel de portada y enlace-->   
+          
+ <div class="tarjeta">
+
+ <img src="AngelT.webp" tyle="width:100%; height:180px; object-fit:cover;">
+
+    <p>Seras un Angel trasera</p>
+ </a>
+ </div>
+  <!-- fin de libro  trasera-->
+   <!-- fin del libro Seras un Angel-->
+ 
+  <!-- Inicio de libro El hijo de la Portera-->
+
+<div class="tarjeta">
+              
+ <img src="HijoP.webp" style="width:100%; height: 180px; object-fit:cover;">
+                
+ <a href="ResElHijo.html" target="_blank">
+                
+ <p>El Hijo de la Portera  ver libro</p>
+</a>
+ </div>
+<!-- Fin de libro de portada y enlace-->
+
+            <!--Trasera de libro-->
+ <div class="tarjeta">
+              
+<img src="HijoT.webp" style="width:100%; height:190px; object-fit:cover;">
+                     
+<p>El hijo de la portera trasera</p>
+                    
+ </a>
+ </div>
+            
+<!-- Fin de trasera de libro El Hijop de la Portera-->
+         
+ 
+  <!-- Inicio de libro Naci Ladron-->
+
+<div class="tarjeta">
+              
+<img src="NaciP.webp" style="width:100%; height:180px; object-fit:cover;">
+                
+<a href="ResNaci.html" target="_blank">
+                
+<p>Naci Ladron ver libro</p>
+ </a>
+ </div>
+<!-- Fin de libro de portada y enlace-->
+
+            <!--Trasera de libro-->
+ <div class="tarjeta">
+              
+<img src="NaciT.webp" style="width:100%; height:180px; object-fit:cover;">
+                     
+<p>Naci Ladron trasera</p>
+                    
+    </a>
+</div>
+            
+<!-- Fin de trasera de Naci Ladron-->
+
+
+<!--Inicio de libro Siluetas-->
+
+            <div class="tarjeta">
+              
+             <img src="SiluP.webp" style="width:100%; height:180px; object-fit:cover;">
+                
+                 <a href="ResSiluetas.html" target="_blank">
+                
+                 <p>Siluetas ver libro</p>
+                 </a>
+                 </div>
+<!-- Fin de libro de portada y enlace-->
+
+            <!--Trasera de libro-->
+             <div class="tarjeta">
+              
+                     <img src="SiluT.webp" style="width:100%; height:180px; object-fit:cover;">
+                      
+                     <p>Siluetas</p>
+                    
+                     </a>
+                 </div>
+            
+<!-- Fin de trasera de Siluetas-->
+
+
+<!--Inicio de libro Asi Naci-->
+
+            <div class="tarjeta">
+              
+             <img src="AsiP.webp" style="width:100%; height:180px; object-fit:cover;">
+                
+                 <a href="ResAsi.html" target="_blank">
+                
+                 <p>Asi Naci ver libro</p>
+                 </a>
+                 </div>
+<!-- Fin de libro de portada y enlace-->
+
+            <!--Trasera de libro-->
+             <div class="tarjeta">
+              
+                     <img src="AsiT.webp" style="width:100%; height:180px; object-fit:cover;">
+                      
+                    <p>Asi Naci</p>
+                    
+                     </a>
+                 </div>
+            
+<!-- Fin de trasera de Asi Naci-->
+
+
+ </main>
+
+</div>
+<script>
+       function ampliar(imagen) 
+    {
+        imagen.classList.toggle("grande");
+    }
+
+   { document.body.style.fontSize = this.value;
+}
+</script>
+
+</body>
+
+</html>
+
+<!--https://bit.ly/46YHOyD
+
+https://bit.ly/4cJhmfY
+https://tinyurl.com/2yx9waup -->
